@@ -1,0 +1,120 @@
+a{-webkit-tap-highlight-color:rgba(255,0,0,0);}
+.none{display:none;}
+/*首页浮动显示文字*/
+.pic-s{	
+	color:#666;text-align:right;
+	font-weight:normal;
+	-webkit-transition:all 0.4s ease-in-out; /* Safari and Chrome */
+	-moz-transition:all 0.4s ease-in-out; /* Firefox 4 */
+	-o-transition:all 0.4s ease-in-out; /* Opera */
+	-ms-transition:all 0.4s ease-in-out;
+	transition:all 0.4s ease-in-out;
+}	
+
+.pic-s{
+	opacity:0.8; /* 小图透明度*/
+	width:600px;
+	margin-top:20px;
+	margin-bottom: 20px;
+	background:#fff;
+}
+
+.pic-s:hover {
+	opacity:1;
+}
+
+.pic-s img:hover{
+	cursor:pointer;
+}
+.pic-s img{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	width: 600px;
+}
+
+.pic-s h2{
+	opacity:1;font-size:24px;
+}
+
+.pic-s p{
+	font-size:12px;	
+	font-family: 'Avenir Next', 'Avenir', 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif,'Microsoft YaHei','SimHei';
+	color: #333;
+	line-height: 24px;
+}
+
+
+/* Common styles for all menus */
+body{overflow-x: hidden;}
+
+.menu__list {
+	position: fixed;
+	left:1%; 
+	padding: 0;
+	list-style: none;
+}
+
+.menu__item {
+	margin: 1em 0;
+}
+
+.menu__link {
+	font-size: 1.05em;
+	font-weight: normal;
+	/*display: block;*/
+	float:left;
+	padding: 1em;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.menu__link:hover,
+.menu__link:focus {
+	outline: none;
+	font-weight: normal;
+}
+
+/* Individual styles */
+
+/* Alonso */
+
+.menu--alonso{
+	position: fixed;
+	top:30%;
+}
+
+.menu--alonso .menu__item {
+	margin: 0;
+	margin-left:5px; 
+}
+
+.menu--alonso .menu__link {
+	width: 200px; /*单元格宽度*/
+	height: 3em;
+	text-align: left;
+	color: #888; /*字体颜色*/
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.menu--alonso .menu__link:hover,
+.menu--alonso .menu__link:focus {
+	color: #546edb;
+	transform:translateX(3px);
+}
+
+.menu--alonso .menu__item--current .menu__link {
+	color: #546edb;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* Media queries */
+
+/* Stack items for smaller screens */
